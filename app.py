@@ -3,8 +3,8 @@ app = Flask(__name__)
 bp = Blueprint('my_blueprint', __name__)
 
 @app.route('/')
-def main():
-    return render_template('main.html')
+def index():
+    return render_template('index.html')
 
 @bp.route('/home')
 def home():
